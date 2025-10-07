@@ -1,25 +1,30 @@
-fn main(){
-    //Carlos Gabriel Cardoza Rios
-let mut i:i8=1;
-let mut j:i8=1;
+fn main() {
 let mut resul:i8;
+let mut m:i8=1;
+let mut n:i8=1;
+
 loop {
-    println!("Tabla del {i}");
-    loop{
-        resul=i*j;
-        println!("{i}*{j}={resul}");
-        if j==10 {
-            j=1;
+    println!("Tabla del {}",n);
+    loop {
+        resul= m*n;
+        println!("{} x {} = {}", n,m,resul);
+
+        if m==10{
+            m=1;
             break;
-        } else {
-            j=j+1;
+        
+        }else {
+            m=m+1;
         }
-    }
-    if i==10{
-        break;
-    } else {
-        i=i+1;
-    }
-    println!();
+    
 }
+   if n==10{
+            break;
+        
+        }else {
+            n=n+1;
+        } 
+println!()
+}
+
 }
