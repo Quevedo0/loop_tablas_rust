@@ -1,34 +1,32 @@
-//Tablas de Multiplicar con Loop
-//Loaiza Ramirez FAbian Leonardo
+//KEVIN SALAS -- CIENCIAS DE DATOS -- TABLAS DE MULTIPLICAR CON LOOP
+
 
 fn main(){
+ let mut multiplicando:i8=1;
+ let mut multiplicador:i8=1;
 
-    let mut num: i32 = 1;
+    loop{
+    println!("Tabla del numero: {}",multiplicando);
 
-    loop {
-        
-        let mut num2: i32 = 1;
+            loop{
+             println!("{} x {} = {}", multiplicando ,multiplicador, multiplicando * multiplicador);
+                
+                multiplicador += 1;
 
-        println!("\nTabla del {num}");
-        
-        loop {
-            
-            println!("{num} x {num2} = {}", num * num2);
-
-            num2 += 1;
-
-            if num2 > 10 {
-                break;
+                if multiplicador > 10{
+                    multiplicador = 0;
+                    break;
+                }
             }
 
-        }
-        
-        num += 1;
+            multiplicando += 1;
 
-        if num > 10 {
+            println!("");
+
+         if multiplicando >10{
             break;
+            }   
 
-        }
-    
     }
+
 }
